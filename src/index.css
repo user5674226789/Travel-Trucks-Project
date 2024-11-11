@@ -1,0 +1,151 @@
+/* Scroll Bar Style */
+
+/* width */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.5);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0.9);
+}
+
+/* End of Scroll Bar Style */
+
+body {
+  margin: 0;
+  background: transparent;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: #f7f7f7;
+  border-radius: 12px;
+  border: 0;
+  padding: 18px;
+  width: 100%;
+  height: 60px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #101828;
+}
+
+textarea {
+  height: 118px;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6c717b;
+}
+
+button,
+.btn {
+  border: 0;
+  border-radius: 200px;
+  padding: 16px 40px;
+  width: max-content;
+  height: 56px;
+  background: #e44848;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+button:hover,
+.btn:hover {
+  background: #d84343;
+}
+
+button.btn-transparent,
+.btn-transparent {
+  border: 1px solid #dadde1;
+  background-color: transparent;
+  border-radius: 200px;
+  padding: 16px 32px;
+  width: max-content;
+  height: 56px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  color: #101828;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.25s;
+}
+
+.btn-transparent:hover {
+  border: 1px solid #d84343;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+button.react-datepicker__navigation:hover {
+  background: transparent;
+}
+
+.mainContainer {
+  max-width: 1440px;
+  width: 100%;
+  padding-left: 64px;
+  padding-right: 64px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1440px) {
+  .mainContainer {
+    max-width: 992px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mainContainer {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    max-width: 375px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

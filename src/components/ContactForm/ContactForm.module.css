@@ -1,0 +1,19 @@
+.form {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.submitButton {
+  margin: 24px auto 0;
+}

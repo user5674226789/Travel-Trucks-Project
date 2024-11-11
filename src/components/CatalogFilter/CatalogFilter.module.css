@@ -1,0 +1,106 @@
+.label {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6c717b;
+  margin-bottom: 8px;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+input.inputLocation {
+  padding-left: 46px;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  fill: #6c717b;
+}
+
+.icon.iconFilled {
+  fill: #101828;
+}
+
+.filterName {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #475467;
+  margin: 40px 0 32px;
+}
+
+.formGroup:nth-child(n+2) {
+  margin-top: 32px;
+}
+
+.filterLabel {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #101828;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #dadde1;
+}
+
+.checkboxGroup,
+.radioGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
+.equipment,
+.type {
+  position: relative;
+  width: calc((100% - 24px) / 3);
+}
+
+.fieldBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dadde1;
+  border-radius: 12px;
+  padding: 4px;
+  width: 100%;
+  height: 96px;
+  mix-blend-mode: multiply;
+}
+
+.eqField:checked+.fieldBlock,
+.typeField:checked+.fieldBlock {
+  border: 1px solid #e44848;
+}
+
+.eqField,
+.typeField {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.blockName {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #101828;
+}
+
+.submitButton {
+  margin-top: 40px;
+}

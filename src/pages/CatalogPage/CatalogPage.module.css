@@ -1,0 +1,36 @@
+.catalog {
+  padding: 48px 0 52px;
+}
+
+.container {
+  display: flex;
+  gap: 64px;
+  justify-content: space-between;
+}
+
+.camperItem:nth-child(n+2) {
+  margin-top: 32px;
+}
+
+.filter {
+  width: 360px;
+}
+
+.content {
+  width: 888px;
+}
+
+.loadMore {
+  margin: 40px auto 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .filter,
+  .content {
+    width: 100%;
+  }
+}
